@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        click me
+    </button>
+    <h1>
+        you didnt click the button yet
+    </h1>
+    <h2 >
+        
+    </h2>
+</body>
+<script>
+    const button = document.querySelector('button');
+    const h1 = document.querySelector('h1');
+    const h2 = document.querySelector('h2');
+    let count = 0;
+    let s = "";
+    function handleClick(){
+        count++;
+        if(count<=5){
+            h1.innerText= `You have clicked the button for ${count} times`;
+        }else{
+            button.removeEventListener('click',handleClick);
+            h1.innerText= `Event listener remved`;
+        }
+    }
+    button.addEventListener('click',handleClick);
+    document.addEventListener('keyup',(e)=>{
+         s+= e.key;
+         h2.innerText = s;
+    })
+</script>
+</html>
