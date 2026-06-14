@@ -1,0 +1,15 @@
+# Compiled Output files
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Object/Intermediate files
+*.obj
+*.o
+
+# Build Directories
+build/
+bin/
+out/
