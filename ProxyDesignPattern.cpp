@@ -7,6 +7,13 @@ using namespace std;
 2. instead of directly passing request to the class driectly we will place a proxy class in between 
 3. this proxy class will perform necessary checks needed and then pass the request to the orginal class
 4. Each proxy class "has-a"original class object along with it as we can see from the code
+5. proxy pattern can be used to provide authentication and authorization , resource utilization and all 
+    
+ Image interface -----> High resoultion image concrete class
+   '------------------> Image proxy class ---> consists of the high resolution image concrete class
+    --- clients should access the heigh resoltion image concrete class only through Image proxy class 
+            
+
 */
 
 
